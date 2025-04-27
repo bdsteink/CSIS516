@@ -40,7 +40,7 @@ mAI Coach provides users with simple, accessible advice and ongoing accountabili
 6. Run the application by executing:
    python mAI_Coach.py
 
-7. Paste your API Key into dialog
+7. Paste your API Key into the dialog box
 
 Note: If you do not provide your own OpenAI API key, this app will not function properly.
 
