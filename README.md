@@ -31,14 +31,16 @@ mAI Coach provides users with simple, accessible advice and ongoing accountabili
 2. Clone or Download this repository and extract the ZIP file if necessary.
 
 3. Create an API Key from platform.openai.com
+
+4. Navigate to the project directory in your terminal or command prompt
    
-4. Install required Python packages by running:
+5. Install required Python packages by running:
    pip install -r requirements.txt
 
-5. Run the application by navigating to the project directory and executing:
+6. Run the application by executing:
    python mAI_Coach.py
 
-6. Paste your API Key into dialog
+7. Paste your API Key into dialog
 
 Note: If you do not provide your own OpenAI API key, this app will not function properly.
 
