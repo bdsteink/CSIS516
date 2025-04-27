@@ -25,8 +25,14 @@ def get_api_key():
 
     # If the API key is not found in the environment, prompt the user for it
     if not api_key:
+
+        # Creates and hides tkinter window from making customtkinter dialog
+        root = tk.Tk()
+        root.withdraw()
+
         # Use CustomTkinter to prompt the user for the API key
-        api_key = ctk.CTkInputDialog(title="API Key", prompt="Please enter your OpenAI API key:")
+        dialog = ctk.CTkInputDialog(title="API Key", text="Please enter your OpenAI API key:")
+        api_key = dialog
 
         # If the user does not provide the API key, exit the program
         if not api_key:
@@ -53,16 +59,8 @@ api_key = get_api_key()
 openai.api_key = api_key
 client = openai.OpenAI()
 
-""""
-# Load API key
-script_dir = os.path.dirname(__file__)
-dotenv_path = os.path.join(script_dir, '.env')
-load_dotenv(dotenv_path)
-api_key = os.getenv("OPENAI_API_KEY")
-openai.api_key = api_key
-client = openai.OpenAI()
 
-"""
+# Declare the path for script
 script_dir = os.path.dirname(__file__)
 
 
